@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube URL Modifier",
+    "version": "1.0",
+    "description": "Añade un punto a las URLs de YouTube para evitar anuncios.",
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess",
+      "webNavigation",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "*://www.youtube.com/*"
+    ]
+  }
+  
